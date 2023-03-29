@@ -2,20 +2,71 @@
 <html lang="en">
 <head>
     <title>My Resume</title>
+
+    <!-- Metadata -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS Files -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <header id="header">
+        <div class="profile-photo"></div>
+        <div class="profile-info">
+            <h1>Ali Sajad Ahmadi</h1>
+            <p>Front-end developer and UI designer</p>
+        </div>
+    </header>
+
     <div class="container">
-        <header>
-            <div class="profile-photo"></div>
-            <div class="profile-info">
-                <h1>Ali Sajad Ahmadi</h1>
-                <p>Front-end developer and UI designer</p>
+        <section id="experience">
+            <h2>Experience</h2>
+            
+            <div class="experience-box">
+                <h3>Senior Front End Developer at <span class="bold">Google</span></h3>
+                <ul>
+                    <li>Design web applications according to client briefs and modify designs to meet changes in client specifications.</li>
+                    <li>Develop web products by coding wireframes into elements that users can interact with.</li>
+                    <li>Work in a team of web designers, back end developers and UX designers to meet project goals and create effective user experiences with digital products.</li>
+                    <li>Supervise junior developers, provide training and motivate team members.</li>
+                </ul>
             </div>
-        </header>
+            <div class="experience-box">
+                <h3>Front End Developer at <span class="bold">Facebook</span></h3>
+                <ul>
+                    <li>Collaborated with web designers, back end developers and UX designers to design, build, test and improve web products.</li>
+                    <li>Added to the company database of code by developing reusable code that could minimize the time needed to complete projects in the future.</li>
+                    <li>Assisted in the training of new developers and web designers.</li>
+                </ul>
+            </div>
+
+            <div class="skills">
+                <ul>
+                    <li>HTML/HTML5</li>
+                    <li>CSS/CSS3</li>
+                    <li>JavaScript/Es6</li>
+                    <li>React</li>
+                    <li>Illustrator</li>
+                    <li>Photoshop</li>
+                    <li>Figma</li>
+                    <li>Adobe XD</li>
+                </ul>
+            </div>
+        </section>
     </div>
+
+    <footer id="footer">
+        <div class="social-media">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-github"></i>
+        </div>
+    </footer>
 </body>
 </html>
