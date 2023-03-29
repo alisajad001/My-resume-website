@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.anim-fade-in{
+    animation: fadeIn 1.6s ease-out;
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+        transform: translateX(-90%);
+
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.cinematic-text {
+    color: #0f0f0f;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    animation: fadeInScale 2s ease-in-out forwards, textGlow 2s ease-in-out ;
+    opacity: 0;
+}
+  
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+#header{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    border-bottom: 4px solid #000;
+}
+
+#header .profile-photo{
+    width: 50%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(32, 63, 240, 0.582), rgba(11, 141, 216, 0.616)), url(../img/profile-photo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#header .profile-info{
+    font-size: 2.3rem;
+    padding: 0 3rem;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#experience{
+    padding: 3rem 2rem;
+}
+
+#experience .experience-box{
+    margin: 3rem 0;
+}
+
+#experience h2{
+    font-size: 3rem;
+    margin: 0 0 3rem 0;
+}
+
+#experience h3{
+    font-size: 1.9rem;
+}
+
+#experience ul{
+    padding: 0 0 0 3rem;
+
+}
+
+#experience ul li{
+    margin: 1rem 0;
+    font-size: 1.3rem;
+    color: #303030;
+    line-height: 1.6;
+}
+
+#footer{
+    text-align: center;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer i{
+    margin: 0 1rem;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1210px) {
+    #header .profile-info{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    #header .profile-info{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    #header{
+        flex-direction: column;
+    }
+
+    #header .profile-photo{
+        width: 100%;
+    }
+
+    #header .profile-info{
+        width: 100%;
+        height: 400px;
+        padding: 0 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+        padding: 0 1.5rem;
+    }
+
+    #experience{
+        padding:  2rem 0;
+    }
+
+    #experience h2{
+        font-size: 2rem;
+    }
+
+    #experience h3{
+        font-size: 1.4rem;
+    }
+
+    #experience ul{
+        padding-left: 1.3rem;
+    }
+
+    #experience ul li{
+        font-size: 1rem;
+    }
+}
